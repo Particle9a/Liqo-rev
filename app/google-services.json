@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "996905350461",
+    "firebase_url": "https://liqo-92f1d.firebaseio.com",
+    "project_id": "liqo-92f1d",
+    "storage_bucket": "liqo-92f1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996905350461:android:30dc0cd98f2f7a37",
+        "android_client_info": {
+          "package_name": "com.example.liqo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996905350461-a8uaegfglj2dtvcj7bn1u5crn6us0efa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdMxu6VL5ANzEtrfKnUyy_yBgt_KrztOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996905350461-a8uaegfglj2dtvcj7bn1u5crn6us0efa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

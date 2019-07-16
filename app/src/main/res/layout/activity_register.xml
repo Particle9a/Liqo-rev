@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RegisterActivity">
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@color/backPrimary"
+            tools:context=".LoginActivity">
+
+        <!-- Register progress -->
+        <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"/>
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/register_form"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:fitsSystemWindows="true">
+
+            <LinearLayout
+                    android:id="@+id/email_register_form"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="56dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/logo" />
+
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="63dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/title" />
+
+                <!-- Email Label -->
+                <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/greyishBlack"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp">
+                    <AutoCompleteTextView
+                            android:id="@+id/email_register"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/black"
+                            android:hint="@string/prompt_email"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Password Label -->
+                <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/greyishBlack"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp">
+                    <EditText
+                            android:id="@+id/password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:hint="@string/prompt_password"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/greyishBlack"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp">
+                    <EditText
+                            android:id="@+id/passwordConfirm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:hint="@string/prompt_password_confirm"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_register"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="10dp"
+                            android:padding="12dp"
+                            android:textColor="@color/pureWhite"
+                            android:background="@color/backTertiary"
+                            android:textAlignment="center"
+                            android:text="@string/action_register"/>
+                    <com.google.android.gms.common.SignInButton
+                            android:id="@+id/sign_up_button"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="24dp"
+                            android:textColor="@color/black"
+                            android:textAlignment="center"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                        android:id="@+id/link_signup"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:textColor="@color/black"
+                        android:text="@string/have_account_note"
+                        android:gravity="center"
+                        android:textSize="16sp"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

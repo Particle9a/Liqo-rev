@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="colorPrimary">#2B7CF3</color>
+    <color name="colorPrimaryDark">#4364EB</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="backPrimary">#E0E0E0</color>
+    <color name="backSecondary">#ff9a00</color>
+    <color name="backTertiary">#ff4d00</color>
+
+    <color name="pureWhite">#FFFFFF</color>
+    <color name="greyishWhite">#C0C0C0</color>
+    <color name="greyishBlack">#404040</color>
+    <color name="dodgerBlue">#2B7CF3</color>
+    <color name="royalBlue">#4364EB</color>
+    <color name="turquoise">#46C7E7</color>
+    <color name="cornflower_blue">#4B6CF3</color>
+    <color name="greyishBlue">#CED8EE</color>
+
+    <color name="daynight_textColor">#6CBABB</color>
+    <color name="switchColor">#911DEE</color>
+
+</resources>
